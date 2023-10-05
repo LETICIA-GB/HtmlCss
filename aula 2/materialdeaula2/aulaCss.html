@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+
+
+    <title> Aula2 -folha de estilo  </title>
+    <style>
+        p{
+            color: aquamarine;
+        }
+        /*. para class*/
+        /*# para id*/
+        .subtituloColorido {
+            color: rebeccapurple;
+        }
+
+        #tituloprincipal{
+            /*cor da fonte*/
+            color: orange;
+            /*tamanho da fonte*/
+            font-size: 40px;
+            /*familia da fonte(tipo: arial, calibri etc..*/
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /*decoração da fonte*/
+            text-decoration: underline;
+
+        }
+            /*body para mudar a cor de fundo do site*/
+        body{
+            /*esse backgroud espeificadamente a cor de fundo do site*/
+            background-color: rgb(84, 128, 86);
+            /*deixa branco o texto que não tem especificações, no caso saiu foi "TITULO MAIS BACANA" pq ele não foi prioritário, pois ele não tem um class, nem id etc*/
+            color: white;
+            /*alinha, centraliza o texto etc*/
+            text-align: center;
+        }
+
+        img{
+            /*largura da imagem*/
+            width: 500px;
+            /*altura da imagem, no caso das minha q eu escolhi 300px ficou bom, mas deixamos em auto para as imagens em gerail*/
+            height: auto;
+            /*escolher para que lado as imagens vão ficar*/
+            float: left;
+            /*para arredondar as bordas da imagem*/
+            border-radius: 20px;
+            /*mudar a forma da borda, cor ,expessura...*/
+            border: solid greenyellow 5px;
+            
+
+
+        }
+
+        /*esses abaixos tem tag class e id*/
+    </style>
+</head>
+<body>
+    <h1 style="color: red;" >AULA 2 CSS</h1>
+    <h3 id="tituloprincipal"> TITULO BACANA</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur esse eveniet, tenetur voluptatum porro minus corrupti deserunt ratione dolorem officia quo quod, neque repellendus nesciunt. Laudantium ratione voluptatem et ipsa.</p>
+    <h3>TITULO MAIS BACANA</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur esse eveniet, tenetur voluptatum porro minus corrupti deserunt ratione dolorem officia quo quod, neque repellendus nesciunt. Laudantium ratione voluptatem et ipsa.</p>
+  
+    <h3 class="subtituloColorido"> TITULO SUPIMPA</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur esse eveniet, tenetur voluptatum porro minus corrupti deserunt ratione dolorem officia quo quod, neque repellendus nesciunt. Laudantium ratione voluptatem et ipsa.</p>
+    <h3 <h3 class="subtituloColorido">TITULO SUPIMPA AINDA</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur esse eveniet, tenetur voluptatum porro minus corrupti deserunt ratione dolorem officia quo quod, neque repellendus nesciunt. Laudantium ratione voluptatem et ipsa.</p>
+    <img src="arara.jpg" alt="uma arara">
+    <img src="flamingo.jpg" alt="um flamingo">
+    <img src="tucano.jpg" alt="um tucano">
+
+
+
+</body>
+</html>

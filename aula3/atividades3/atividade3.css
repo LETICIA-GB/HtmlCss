@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#pagina{
+   
+    width: 1200px;
+   
+    margin: 0px auto
+   
+    
+}
+
+
+#cabecalho{
+    /*largura do cabeçalho*/
+    /*o cabeçalho esta dentro do elento pai, ele vai ter 100% de 1200 px é do pai*/
+    width: 100%;
+    /*altura*/
+    height: 60px;
+    /*cor*/
+    background-color: rgb(54, 4, 39);
+    color: rgb(163, 11, 117);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    line-height: 60px;
+}
+
+#conteudo{
+    /*largura do cabeçalho*/
+    /*o cabeçalho esta dentro do elento pai, ele vai ter 100% de 1200 px é do pai*/
+    width: 100%;
+    /*altura*/
+    height: 30px;
+    /*cor*/
+    background-color: rgb(54, 4, 39);
+    color: rgb(124, 7, 89);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    line-height: 60px;
+}
+

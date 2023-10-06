@@ -1,0 +1,39 @@
+/**/
+/*o asterisco vai selecionar todo a pagina. e o marging e padding estão anulando altura e largura automatica*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#pagina{
+    /*esse abaixo é saber */
+    width: 1200px;
+    /*margin com 2 valores: eixo y(cima e baixo) e eixo x (esquerdo e direiro)*/
+    /*margin com 4 valores: sentido horario(cima, direito, baixo e esquerda*/
+    margin: 0px auto
+    /*margin com 1 valor: todos os lados-ESSES ABAIXO É FAZER A MARGEM UM A UM LADOS*/
+    /* margin-bottom: 20px; */
+    /* margin-left: 5px; */
+    /* margin-right: 50px; */
+    
+}
+
+p{
+    color: gray;
+}
+/*chamei a parte do cabeçalho do html*/
+#cabecalho{
+    /*largura do cabeçalho*/
+    /*o cabeçalho esta dentro do elento pai, ele vai ter 100% de 1200 px é do pai*/
+    width: 100%;
+    /*altura*/
+    height: 60px;
+    /*cor*/
+    background-color: rgb(228, 20, 20);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    line-height: 60px;
+}
+
+

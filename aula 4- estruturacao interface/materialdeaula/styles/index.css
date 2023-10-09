@@ -77,7 +77,7 @@ h3{
     margin: 10px 0;
     background-image: url(../images/ceu.jpg);  /*usar o ../ pode ser várias vezes para voltar pastas*/
     background-size: cover ;  /*para ajustar o tamanho da imagem colocada, pode deixar cover para ela mostrar toda ou colocar uma porcetagem*/
-    background-position: ; /*ajustar a posição da imagem, se vou mostrar mais pro lado dela, centro dela etc*/
+    background-position: center; /*ajustar a posição da imagem, se vou mostrar mais pro lado dela, centro dela etc*/
     background-repeat: no-repeat; /*caso a imagem seja pequena ela pete varias vezes, para ela não repetir deixe em no repeat*/
 
 }

@@ -1,0 +1,99 @@
+*{
+padding: 0%;
+margin: 0%;
+/**/
+}
+/*header eu to chamando o cabeçalho do html*/
+header{
+    /*100% de largura*/
+    width: 100%;
+    /*site com borda*/
+    /*width: 1200px*/
+    /*margin 0px auto*/
+    height: 40px; /*estava 60px, deixamos 40px e 10px de pading(fica 10 e um lado e do outro) para poder centralizar a logo*/
+    padding: 10px 0px;
+    background-color: rgb(100, 100, 209);
+}
+
+#logo{
+    width: 40px;
+    height: 40px;
+    margin: 0px 20px;
+    background-color: black;
+    border-radius: 40px; /*arrendondado da caixa da logo, ainda não da imagem q ta dentro da logo*/
+    overflow: hidden; /*para que a foto siga a caixa da logo, o que tiver alem dele, esconda. escondeu as bordinhas da imagem*/
+    float: left; /*flutuano os links home ceusol oceano...mas eu configurei no pai de o nav lá embaixo*/
+
+
+}
+/* vamos mudar a alt e largura do filho q ta dentro do pai, q ele fique 100% com a do pai*/
+#logo img{
+    width: 100%;
+    height: 100%;
+
+}
+
+nav{
+    /*config da posição do  home ceusol oceano..*/
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    margin: 0px 20px;
+    float: right 
+}
+
+/*config da aparecia dos links*/
+a{
+    text-decoration: none; /*tirou o sublinhado do home, ceu sol etc*/
+    margin: 0px 6px; /*espaçamento entre os nomes home ceu sol oceano*/
+    background-color: black;
+    color: white;
+    padding: 0px 15px;
+    border-radius: 10px; /*bordinha arredondada do backgroud*/
+
+
+}
+/* config do conteudo*/
+main{
+    width: 90%;
+   background-color: rgb(140, 181, 218);
+   padding: 20px;
+   margin: 0 auto; /*espaçamento entre esse e o cabeçalho*/
+   border-radius: 20px;
+   box-shadow: rgb(3, 90, 112) 6px 6px;  /*cor da sombra e expessura*/
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+/*esta chamenado para as confi do meu titulo, que esta no main*/
+h3{ 
+    color: aqua;
+    text-align: center;
+    }
+
+#banner{
+    width: 100%;
+    height: 400px;
+    margin: 10px 0;
+    background-image: url(../images/ceu.jpg);  /*usar o ../ pode ser várias vezes para voltar pastas*/
+    background-size: cover ;  /*para ajustar o tamanho da imagem colocada, pode deixar cover para ela mostrar toda ou colocar uma porcetagem*/
+    background-position: ; /*ajustar a posição da imagem, se vou mostrar mais pro lado dela, centro dela etc*/
+    background-repeat: no-repeat; /*caso a imagem seja pequena ela pete varias vezes, para ela não repetir deixe em no repeat*/
+
+}
+    /* confin do texto lorem*/
+h2{
+    color: blue;
+    margin: 20px;
+    
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    padding: 10px 0px;
+    line-height: 40px;
+    text-align: center;
+    background-color: black ;
+    color: white;
+}

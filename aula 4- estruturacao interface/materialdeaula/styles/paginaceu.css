@@ -1,0 +1,111 @@
+/*keyframes para animações*/
+
+@keyframes mudacor1 {
+    0%{
+        background-color: rgb(255, 218, 9);
+        margin-left: 50px;
+    }
+    50%{
+        background-color: orange;
+        margin-left: 100px;
+
+    }
+
+    100%{
+        background-color: orangered;
+        margin-left: 150px;
+    }
+}
+
+
+
+
+@keyframes mudabackgroundaves {
+    0%{
+        background-image: url(../images/aves1.jpg);
+        transition: 1s;
+
+   
+    }
+    20%{
+        background-image: url(../images/pordosol1.jpg);
+        transition: 1s;
+    }
+
+    40%{
+        background-image: url(../images/aves2.jpg);
+        transition: 1s;
+    }
+
+    60%{
+        background-image: url(../images/pordosol2.jpg);
+        transition: 1s;
+    }
+    80%{
+        background-image: url(../images/pordosol3.jpg);
+        transition: 1s;
+    }
+    100%{
+        background-image: url(../images/aves3.jpg);
+        transition: 1s;
+    }
+
+
+}
+
+
+
+
+/*para config a fonte q baixamos dos outros sites, eu abri 3 @font-face para colocar as 3 que eu baixei*/
+@font-face{
+    font-family: FonteMilk; /*eu tenho q abrir o fontfamily e dar um nome p a fonte q eu baixar*/
+    src: url(../fonts/super_milk/Super\ Milk.ttf);
+    font-weight: normal;
+    /*otf, ttf*/
+    }
+
+
+
+h1{
+    font-family: FonteMilk;
+    text-align: center;
+    color: rgb(92, 48, 212);
+
+
+}    
+
+h3{
+    color: rgb(3, 3, 160);
+    font-family:Arial, Helvetica, sans-serif
+    
+
+
+}
+
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+
+
+}
+
+#caixacor{
+    width: 500px;
+    height: 50px;
+    background-color: orangered;
+    animation-name: mudacor1 ; /*eu tenho q chamar o nome da animação q eu fiz em cima*/
+    animation-duration: 3s; /*de quanto em quanto tempo vai passar cada rodada da animação*/
+    animation-iteration-count: infinite; /*o tanto de tempo eu quero q a animação rode*/
+    animation-delay: 2s; /*apos a pessoa entrar no site o tempo para a nimação começar a rodar*/
+}
+
+#caixaimagem{
+    width: 500px;
+    height: 500px;
+    background-image: url(../imagens/pontejk.jpg);
+    background-size: cover;
+    background-position: right;
+    animation: mudabackgroundaves 10s infinite;  /*chamar a a nimação para rodar, com 10segundos e infinite(sem parar)*/

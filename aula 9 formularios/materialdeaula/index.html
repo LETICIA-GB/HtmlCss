@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 9- formularios</title>
+    <link rel="stylesheet" href="styles/geral.css">
+</head>
+<body>
+    <h1>FORMULÁRIO</h1>
+    <h3>Cadastro</h3> 
+    <!-- o method="post" daqui em baixo: para evitar que não vaze informações-->
+    <!--GET - PEGA AS INFORMAÇÕES, COLOCA NA URL E MANDA PARA O SERVIDOR-->
+    <!-- POST - PEGA AS INFORMAÇÕES E MANDA PARA O SERVIDOR-->
+    <form action="cadastrar.php" method="post"> <!--sem esse form as caixas de texto não fazem nada/ DENTRO DAS ASPAS: pode colocar p linkar com o backend, "cadastrar.php" não vai para lugar nenhum pois não tem backend-->
+        <!--TEXT - PARA TEXTO NORMAL-->
+        <label for="nome">Nome*</label><br><!--o "nome" ta atribuido do id abaixo para o for aqui da linha/ <br> da um espaçamento entre a palavra e a caixa-->
+        <input type="text" id="nome" required placeholder="escreva seu usuário"> <!--input: é a caixa e texto/ placeholder: aquela msg para intruir o usuário/ REQUIRED: obrigatorio o usuario preencher -->
+        
+        <!--PASSWORD - PARA SENHAS-->
+        <label for="senha"> Senha*</label>
+        <input type="password" id="senha" disabled placeholder="Digite a sua melhor senha!"> <!--dependendo do navegador ele não vai aparecer o olhinho para visualizar a senha/ DISABLED: desabilita a senha-->
+        
+        <!--EMAIL- PARA VALIDAR EMAIL DE FORMA SIMPLES-->
+        <label for="email">Digite e-mail</label>
+        <input type="email" id="email" placeholder="Digite seu email!">
+        
+        <!--NUMBER - PARA RECEBER VALORES NUMÉRICOS-->
+        <label for="idade">Digite sua idade</label>
+        <input type="number" step="1" min="1" max="10" placeholder=""> <!--number coloca as setinhas/ step: são os passos/ MIN: colocar o minimo que vai iniciar a contagem e o /MAX para o maximo da contagem-->
+        
+        <!--INPUTDATE - PARA DATAS-->
+        <label for="datadenascimento"> Coloque sua data de Nascimento</label>
+        <input type="date" name="" id="datadenascimento"> <!--colocau a caixa para data de nascimento com calendario-->
+
+        <!--TIME - PARA HORAS-->
+        <label for="relogio"> Coloque a data do nascimento</label>
+        <input type="time" id="relogio">
+
+        <!--COLOR - PARA CORES-->
+        <label for="cor"> Coloque sua cor favorita</label>
+        <input type="color" id="cor">
+
+        <!--FILE - PARA ARQUIVOS-->
+        <label for="foto"> Insira sua foto de perfil</label>
+        <input type="file" id="foto">
+
+        <!--CHECKBOX - PARA VERIFICAR SE SIM OU NÃO-->
+        <label for="mandaemail"> Deseja receber notificações</label>
+        <input type="checkbox" id="mandaemail"> <!--coloca um quadradinho q a pessoa pode marcar ou não. ex: li e confirmo-->
+
+        <!--RADIO - VÁRIAS OPÇÕES PODENDO APENAS MARCAR UMA -->
+        <fieldset> <!--para deixar tudo dentro de um bloquinho só-->
+           <legend>QUAL É O SEU SEXO</legend> <!--legend: para o texto fica entrelinha do bloquinho-->
+        <label for="sexo"> Qual seu sexo?</label>
+        Homem<input type="radio" name="sexo" value="Homem">
+        Mulher<input type="radio" name="sexo" value="Mulher">
+        Não dizer<input type="radio" name="sexo" value="naodizer" >
+        </fieldset>
+
+        <!--SELECT - VÁRIAS OPÇÕES-->
+        <label for="estado"> Selecione o Estado onde mora</label>
+            <select id="estado">
+                <option value="DF">Distrito Federal</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="AC">Acre</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="BA">Bahia</option>
+            </select>
+         <!--TEXTAREA - AREA DE TEXTO--> 
+         <label for="feedback">Digite seu feedback</label>  
+        <textarea name="" id="feedback" placeholder="Digite seu feedback" cols="50" rows="20" maxlength="10" style="resize: none"></textarea>    <!--caixa para feedback do usuário/ cols e rows: tamanho da caixa e linhas/maxlength: limitar a qtidade de caracteres/ style="resize: none" para q o usuario não movimente a caixa -->
+
+        <button type="submit">CADASTRAR</button> <!--Para colocar o botão ao fim de digitar na caixa-->
+        <button type="reset">REFAZER FORMULÁRIO</button>
+        <!--submit: envia-->
+        <!--reset: apaga os inputs-->
+        <!--menu: botão para menus-->
+        <!--button: botão sem ação-->
+                
+        <!-- <input type="button" value="MENSAGEM"> --> <!--pode colocar o botão tbm dessa forma-->
+       
+
+    </form>
+
+</body>
+</html>

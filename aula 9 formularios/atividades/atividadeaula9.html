@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 9- formularios</title>
+    <link rel="stylesheet" href="../atividades/atividadeaula9.css">
+</head>
+<body>
+    <h1>FORMULÁRIO</h1>
+    <h3>Cadastro</h3> 
+    <!-- o method="post" daqui em baixo: para evitar que não vaze informações-->
+    <!--GET - PEGA AS INFORMAÇÕES, COLOCA NA URL E MANDA PARA O SERVIDOR-->
+    <!-- POST - PEGA AS INFORMAÇÕES E MANDA PARA O SERVIDOR-->
+    <form action="cadastrar.php" method="post"> <!--sem esse form as caixas de texto não fazem nada/ DENTRO DAS ASPAS: pode colocar p linkar com o backend, "cadastrar.php" não vai para lugar nenhum pois não tem backend-->
+        <!--TEXT - PARA TEXTO NORMAL-->
+        <label for="nome">Nome</label><!--o "nome" ta atribuido do id abaixo para o for aqui da linha/ <br> da um espaçamento entre a palavra e a caixa-->
+        <input type="text" id="nome" placeholder="escreva seu usuário"> <!--input: é a caixa e texto/ placeholder: aquela msg para intruir o usuário/ REQUIRED: obrigatorio o usuario preencher -->
+               
+        <!--EMAIL- PARA VALIDAR EMAIL DE FORMA SIMPLES-->
+        <label for="email">Digite e-mail</label>
+        <input type="email" id="email" placeholder="Digite seu email!">
+
+        <!--PASSWORD - PARA SENHAS-->
+        <label for="senha"> Senha</label>
+        <input type="password" id="senha" placeholder="Digite sua senha!"> <!--dependendo do navegador ele não vai aparecer o olhinho para visualizar a senha/ DISABLED: desabilita a senha-->
+
+        <label for="senha"> Senha</label>
+        <input type="password" id="senha" placeholder="Repita sua senha!"> <!--dependendo do navegador ele não vai aparecer o olhinho para visualizar a senha/ DISABLED: desabilita a senha-->
+    </form>

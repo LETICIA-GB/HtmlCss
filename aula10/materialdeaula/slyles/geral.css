@@ -1,0 +1,152 @@
+@keyframes borda{
+    0%{
+        border: 5px solid rgb(236, 12, 87);
+        transition: 0.5s;
+    }
+
+
+    50%{
+        border: 5px solid rgb(219, 97, 138);
+        transition: 0.5s;
+    }
+
+    100%{
+        border: 5px solid rgb(230, 197, 208);
+        transition: 0.5s;
+    }
+
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+
+}
+
+#pagina{
+    width: 100%;
+    height: 100vh; /* vh- viewport- sempre sera no height, vh para 100 do monitor*/
+    background-color: rgb(211, 123, 152);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /*para não amassar a imagem*/ 
+
+
+}
+
+
+main{
+    width: 70%;
+    height: 600px;
+    background-color: rgb(236, 170, 192);
+    border-radius: 20px;
+    box-shadow: rgb(209, 87, 168) 6px 6px;
+    display: flex;
+    overflow: hidden; /*para a imagem ficar de acordo com a forma da caixa do main*/
+
+}
+
+#banner, #formulario{   /*para as config que forem iguais para as mesmas divs, não esquecer a virgula pois as separa como elementos*/
+    width: 50%; /*dividir o banner para um lado e o formulario para outro*/
+    height: 100%;
+    
+}
+
+#banner{
+    background-image: url(../images/arvore.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /*caso a imagem seja muito pequena e ela repetir, seleciona esta opção, isso é de acordo com a imagem*/
+
+}
+
+#efeito{ /*efeitos na imagem*/
+    width: 100%; /*vai seguir 100% do elemento pai*/
+    height: 100%;
+    background-color: rgba(81, 52, 243, 0.24); /* colocar opacidade na imagem/ pode colocar um gradiente tbm ir no site grtiente css*/
+
+}
+#formulario {
+    display: flex;
+    flex-direction: column;  /*esse comando esta invertendo os eixos(mas não era par fazer isso, um problema de atualização)*/ 
+    align-items: center;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#formulario:has(p){
+background-color: aquamarine;
+
+}
+
+
+h2{
+    color: rgb(169, 83, 180);
+    margin: 20px 0px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16pt;
+}
+
+input{
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    transition: 1s;
+    animation: borda 1.5s infinite;
+}
+
+
+
+input:hover{
+    background-color: rgb(187, 218, 233);
+    transition: 0.3s;
+    
+    
+}
+
+input:focus{
+    width: 380px;
+    height: 40px;
+    transition: 1s;
+    background-color: rgb(243, 205, 158);
+    color: white;
+
+}
+
+input::placeholder{
+    color: rgb(157, 236, 236);
+}
+
+button{
+    width: 200px;
+    height: 30px;
+    background-color: rgb(211, 123, 152);
+    margin: 10px auto;
+    border-radius: 5px;
+    transition: 0.5s;
+
+   
+
+}
+
+button:active{
+    background-color: rgb(44, 16, 206);
+    color: brown;
+}
+
+button:hover{
+    width: 250px;
+    height: 35px;
+    background-color: rgb(211, 209, 123);
+    font-weight: bold;
+    transition: 0.5s;
+   
+
+}

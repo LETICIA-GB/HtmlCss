@@ -71,7 +71,7 @@ main{
     display: flex;
     flex-direction: column;  /*esse comando esta invertendo os eixos(mas não era par fazer isso, um problema de atualização)*/ 
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -89,7 +89,7 @@ h2{
 form{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 2px;
     font-size: 16pt;
 }
 

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/geral.css">
+</head>
+<body>
+    <h1>TABELAS</h1>
+    <table>             <!--chamar q vamos trabalhar com tabela-->
+        <tr>            <!--table row: abrir a linha da tabela-->
+            <th></th>      <!-- th TABLE HEADER: cabeçalho da tabela, o tracinho é  quina da tabela-->
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+        </tr>           <!--fechamento da linha da tabela-->
+        <tr>            <!--abrindo nova linha(parte vertical)-->
+            <th>1</th>
+            <td>A1</td>       <!--TABLE DATA:aqui se insere os dados da tabela-->
+            <td>B1</td> 
+            <td>C1</td> 
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>A2</td>       <!--TABLE DATA:aqui se insere os dados da tabela-->
+            <td>B2</td> 
+            <td>C2</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td>A3</td>       <!--TABLE DATA:aqui se insere os dados da tabela-->
+            <td>B3</td> 
+            <td>C3</td>
+        </tr>
+    </table>
+
+    <h3>LISTA DE ALUNOS</h3>
+    <table id="tabelaalunos">
+        <thead>                 <!--cabeça da tabela-->
+            <tr>
+                <th></th>
+                <th>Nome do aluno</th>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <th>Nota 3</th>
+                <th>Média Final</th>
+            </tr>
+        </thead>
+        <tbody>                 <!--corpo da tabela-->
+            <tr>
+                <th>1</th>
+                <td>Letícia</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Fulano</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Fulano</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>Fulano</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td>Fulano</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td>Fulano</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td rowspan="2">João</td> <!--mesclar para joão ocupar duas linhas-->
+                <td>4</td>
+                <td>3</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+            <tr> <!--deste bloco eu retirei o nome de um aluno da coluna nome do aluno-->
+                <th>8</th>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+                <td>8</td>
+            </tr>
+        </tbody>
+        <tfoot>                         <!--pé da tabela-->
+            <tr>
+                <th colspan="5">Média da sala</th> <!--mesclar para o media da sala ocupar 5 colunas-->
+                <td>10</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <div id="scroll"></div>  <!--colcoar a barra de rolagem da lateral-->
+    
+</body>
+    
+</html>

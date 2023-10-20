@@ -1,0 +1,40 @@
+*{
+    padding: 0%;
+    margin: 0%;
+
+}
+
+.listas{
+    width: 500px;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+#viagem{
+    background-color: bisque;
+}
+
+#compras{
+    background-color: rgb(159, 223, 201);
+}
+#compras ul{ /*estou estilizando o ul que esta no html e lá não tem suporte, aqui aparece mais opções para a listagem*/
+    list-style-type: georgian;
+}
+
+#dicionario{
+    background-color: lightpink;
+}
+#computadores{
+    background-color:lightskyblue
+}
+
+dt{
+    font-size: 14pt;
+    color: blue;
+}
+dd{
+    color: brown;
+    margin: 10px;
+}
+ul li{
+    margin: 5px 10px;
+}

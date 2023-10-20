@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="stylesheet" href="style/geral.css">
+</head>
+<body>
+    <h1>LISTAS</h1>
+    <h3>ROTEIRO DE VIAGEM(Lista ordenada)</h3>
+    <div id="viagem" class="listas">
+        <!--ol: lista ordenada-->
+        <ol type="A"> <!--qdo coloco o type eu defino a lista, se vai ter numeros romanos, alfabetico, numaral ...-->
+            <h5>CONFERIR ITENS</h5>
+            <li>Conferir dinheiro</li>  <!--li: um item da lista-->
+            <li>Conferir passaporte</li>
+            <li>Conferir hospedagem</li>
+            <h5>ARRUMAR ITENS</h5>
+            <li>Arrumar malas</li>
+            <h5>VIAJAR</h5>
+            <li>Ir até o aeroporto</li>
+            <li>Embarcar</li>
+        </ol>
+    </div>
+    <h3>LISTA DE COMPRAS(Lista não-ordenada)</h3>
+    <div class="listas" id="compras">
+        <!--para listas não ordenadas-->
+        <ul type="disc">  <!-- aqui o vscode não da superte, mas tem essas opões: square(quadrados), disc(circulo preenchidos) ,circle(circulo não preechido)-->
+            <li>batata</li>
+            <li>arroz</li>
+            <li>feijão</li>
+            <li>nescau</li>
+            <li>carne</li>
+            <li>verduras</li>
+            <li>frutas</li>
+            <li>chocolate</li>
+            <li>limpeza</li>
+        </ul>   
+    </div>
+    <h3>DICIONÁRIO (Lista de descrição)</h3>
+    <div id="dicionario" class="listas">
+        <dl>
+            <dt>LISTA ORDENADA</dt> <!--description term:descrição do termo-->
+            <dd>Uma lista onde a ordem dos elementos importam</dd> <!--descrição-->
+            <dt>LISTA ORDENADA</dt>
+            <dd>Uma lista onde a ordem dos elementos que não importam</dd>
+        </dl>
+    </div>
+    <h3>COMPUTADORES</h3>
+    <div class="listas" id="computadores">
+        <ol>
+            <li>
+                <dt>COMPUTADOR DO VICTOR</dt>
+                <dd>Computador do professor com as marcas Nvidea e Intel</dd>
+                <h5>DESCRIÇÕES TÉCNICA</h5>
+                <ul>
+                    <li>POCESSADOR: I710700K INTEL</li>
+                    <li>48G - MEMORIA RAM DDR4 CORSAIR</li>
+                    <li>PLACA DE VIDEO RTX 2060 4VRAM</li>
+                    <li>FONTE 550V CORSAIR</li>
+                    <li>PLACA MÃE - ROG STRIX</li>
+                </ul>
+            </li>
+            <li>
+                <dt>COMPUTADOR DO TURMA</dt>
+                <dd>Computador utiçizado em sala de aula</dd>
+                <h5>DESCRIÇÕES TÉCNICA</h5>
+                <ul>
+                    <li>POCESSADOR: I9 INTEL</li>
+                    <li>120G - MEMORIA RAM DDR5 CORSAIR</li>
+                    <li>PLACA DE VIDEO RTX 4090 24VRAM</li>
+                    <li>FONTE 1000V CORSAIR</li>
+                    <li>PLACA MÃE - ROG STRIX</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+    <h3>SUMÁRIO FRONT END</h3>
+    <div class="listas" id="sumario">
+            <h5>BÁSICO</h5>
+            <ol type="I">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+            </ol>
+            <h5>INTERMEDIÁRIO</h5>
+            <ol start="4" type="I"> <!--para ele continuar a contagem dos capitulos-->
+                <li>BOOTSTRAP</li>
+                <li>WORDPRESS</li>
+                <li>JQUERY</li>
+            </ol>   
+            <h5>AVANÇADO</h5>
+            <ol start="7" type="I">
+                <li>REACT</li>
+                <li>VUE</li>
+                <li>COBOL</li>
+            </ol>
+     </div>
+     <nav>
+        <ul>
+            <a href="#">HOME</a>
+            <a href="#">SOBRE NÓS</a>
+            <a href="#">LOGIN</a>
+        </ul>
+     </nav>
+</body>
+</html>

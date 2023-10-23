@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESPONSIVIDADE</title>
+    <link rel="stylesheet" href="styles/geral.css">
+    <link rel="stylesheet" href="styles/@media.css" media="screen and (max-width: 768px )"> <!--em vez de config o @media dentro do css, abre um novo arquivo do css e linka por aqui/ PARA CONFIG DE MONITORES-->
+    <link rel="stylesheet" href="styles/landscape.css" media="screen and (orientation : landscape)"> <!--landscape é o modo paisagem, deitado/ PARA MOBILE-->
+    <link rel="stylesheet" href="styles/portrait.css" media="screen and (orientation : portrait)">  <!--portrait é o modo retrato, em pé/ PARA MOBILE-->  
+    
+
+</head>
+<body>
+    <div id="pagina">
+        <header>
+            <div id="logo">
+                <img src="images/florazul.jpg" alt="">
+            </div>
+
+            <nav>
+                <ul>
+                    <li> <a href="#"> Home</a></li> 
+                    <li> <a href="#">Atividade</a></li>
+                    <li> <a href="#">Elemento</a></li>
+                    <li> <a href="#">Elemento</a></li>
+                    <li> <a href="#">Elemento</a></li>
+                </ul>
+            </nav>
+            <!--mobile-->
+            <div id="menumobile">
+                <img src="images/menuIcon.svg" alt="">
+            </div>
+        </header>
+        <main>
+            <!--pictures- muitos sources( src)-->
+            <picture> <!--o picture aceita mais variantes da imagem(no caso aqui da mulher dançando)-->
+                <source srcset="images/mulherdancandoMenor.jpg" media="screen and (max-width : 768px )">
+                <img src="images/mulherdancando.jpg" alt="Uma mulher dançando">
+
+            </picture>
+            
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis natus voluptatibus sequi dolorem asperiores est doloremque iusto reprehenderit itaque vitae cum accusamus eius, molestias ipsa enim tenetur quidem veritatis quo?</p>
+        </main>
+        <footer></footer>
+    </div>
+    
+</body>
+</html>

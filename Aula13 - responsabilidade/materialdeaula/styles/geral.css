@@ -77,3 +77,32 @@ main img{
         color: blueviolet;
     }
 }
+
+#opcoesmobile{
+    width: 100%;
+    padding: 20px 0px;
+    background-color: palevioletred;
+    display: flex;
+    flex-direction: column;
+}
+
+#opcoesmobile ul{ /*responsalvel pela lista deste menu*/
+    width: 80%;
+    flex-direction: column;
+}
+
+#opcoesmobile ul li{ /*estilização do menu q esta dentro da lista*/
+    width: 100%;
+    height: 40px;
+    transition: 1s;
+    display: flex; /*aparecer ou não depende do codigo de javascrispt*/
+    justify-content: center;
+    align-items: center;
+
+}
+
+#opcoesmobile ul li:hover{ /*estilização ao passar o mouse nas opções do menu da lista*/
+    background-color: rgb(88, 66, 66);
+    border-radius: 10%;
+    transition: 1s;
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESPONSIVIDADE</title>
+    <title>Responsividade</title>
     <link rel="stylesheet" href="styles/geral.css">
     <link rel="stylesheet" href="styles/@media.css" media="screen and (max-width: 768px )"> <!--em vez de config o @media dentro do css, abre um novo arquivo do css e linka por aqui/ PARA CONFIG DE MONITORES-->
     <link rel="stylesheet" href="styles/landscape.css" media="screen and (orientation : landscape)"> <!--landscape é o modo paisagem, deitado/ PARA MOBILE-->
@@ -19,7 +19,7 @@
                 <img src="images/florazul.jpg" alt="">
             </div>
 
-            <nav>
+            <nav id="opcoespc">
                 <ul>
                     <li> <a href="#"> Home</a></li> 
                     <li> <a href="#">Atividade</a></li>
@@ -28,11 +28,23 @@
                     <li> <a href="#">Elemento</a></li>
                 </ul>
             </nav>
-            <!--mobile-->
-            <div id="menumobile">
+            <!--mobile/ adicionei aqui o icone svgq vai aparecer qdo estiver no mobile-->
+            <div id="menumobile" onclick="abriropcoes()"> <!--para chamar o bloco de codigo q fizemos no javascript-->
                 <img src="images/menuIcon.svg" alt="">
             </div>
         </header>
+            <!--menu do mobile inicio-->
+            <nav id="opcoesmobile">
+                <ul>
+                    <li> <a href="#"> Home</a></li> 
+                    <li> <a href="#">Atividade</a></li>
+                    <li> <a href="#">Elemento</a></li>
+                    <li> <a href="#">Elemento</a></li>
+                    <li> <a href="#">Elemento</a></li>
+                </ul>
+
+            </nav>
+            <!--menu do mobile fim-->
         <main>
             <!--pictures- muitos sources( src)-->
             <picture> <!--o picture aceita mais variantes da imagem(no caso aqui da mulher dançando)-->
@@ -46,5 +58,15 @@
         <footer></footer>
     </div>
     
+    <script>
+        function abriropcoes(){
+            if (opcoesmobile.style.display == "none"){
+                opcoesmobile.style.display = "flex"
+            } else{
+                opcoesmobile.style.display = "none"
+            }
+        }
+        
+    </script>
 </body>
 </html>

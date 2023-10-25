@@ -1,0 +1,112 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#pagina,header,footer,main,#galeria{ /*como vai colocar o display flex e o width 100% nessas tags, em vez de repetir coloca elas em uma só*/
+    width: 100%;
+    display: flex;
+    
+}
+
+#pagina{
+    flex-direction: column;
+    align-items: center;
+}
+
+/*cabeçalho*/
+header{
+    height: 80px;
+    background-color: #2A2B2A;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+/*fim cabeçalho*/
+
+nav{
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+/*conteudo*/
+main{
+    padding: 20% 0px;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr{
+    width: 40%;
+    border: 2px solid #F5124B;
+
+}
+
+#destaque{
+    width: 60%;
+    padding: 20px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+#destaque p{
+    color: rgb(179, 179, 179);
+}
+
+button{
+    width: 80px;
+    padding: 5px;
+    background-color: #F5124B;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.imagem{
+    width: 100%;
+
+}
+
+#galeria{
+
+}
+
+.post{
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgb(156, 155, 155);
+    border-radius: 5px;
+}
+/* fim conteudo*/
+footer{
+    height: 60px;
+    background-color: #2A2B2A; 
+}
+
+

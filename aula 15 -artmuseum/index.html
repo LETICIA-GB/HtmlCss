@@ -6,25 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Correção artmuseum</title>
     <link rel="stylesheet" href="styles/geral.css">
+    <link rel="stylesheet" href="styles/@media.css" media="screen and (max-width : 768px)">
 </head>
 <body>
     <div id="pagina">
         <header>
             <h1>ArtMuseum</h1>
-            <nav>
+            <nav id="menupc">
                 <ul>
-                    <li><a href="#">Home</li>
-                    <li><a href="#">Galeria</li>
-                    <li><a href="#">Contato</li>    
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Contato</a></li>    
                 </ul>
-            </nav>    
+            </nav> 
+            <div id="menuicon" onclick="abrirMenu()"> <!--é aqui q chamamos a função do javascript lá de baixo-->
+                 <img class="imagem" src="images/iconeestrela.svg" alt="">
+
+            </div>   
         </header>
+        <nav id="menumobile"> 
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Contato</a></li>    
+            </ul>
+        </nav> 
         <main>
             <h2>Destaque da semana</h2>
             <hr>
             <div id="destaque">
                 <h3>Elizabeth</h3>
-                <img class="imagem" src="images/elizabeth.jpg" alt="">
+                <picture>
+                    <source class="imagem" srcset="images/elizabethMenor.png" media="screen and (max-width : 768px)">
+                    <source class="imagem" srcset="images/elizabethLandscape.png" media="screen and ( orientation: landscape) and (max-height : 500px)">
+                    <img class="imagem" src="images/elizabeth.jpg" alt="">
+                </picture>
+                
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque distinctio nisi inventore fugit qui nobis, commodi est provident ipsam soluta quos maxime. Inventore tenetur nihil quos earum dignissimos necessitatibus deleniti!</p>
                 <button type="button">Ver sobre</button>
             
@@ -59,6 +76,15 @@
         <footer></footer>
 
     </div>
+    <script>
+        function abrirMenu(){
+            if(menumobile.style.display == "none"){
+                menumobile.style.display = "flex";
+            }else{
+                menumobile.style.display = "none";
+            }
+        }
+    </script>
     
 </body>
 </html>

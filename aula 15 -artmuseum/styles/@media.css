@@ -1,0 +1,44 @@
+/*header{
+    background-color: red;
+}*/
+
+#menuicon{
+    display: block;
+}
+
+#menupc{
+    display: none;
+}
+
+.post{
+    width: 90%;
+}
+
+#menumobile{
+    /*display: none; *//* deixei none ao invés de flex, pois quem vai mostrar se o menu abre ou fecha será o javasript*/
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    background-color: #2A2B2A;
+    transition: 0.5s;
+
+}
+
+#menumobile ul{
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#menumobile li{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menumobile li:hover{
+    background-color: rgb(82, 61, 66);
+    transition: 0.5s;
+}
+

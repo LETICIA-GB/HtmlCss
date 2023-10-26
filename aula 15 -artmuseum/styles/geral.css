@@ -47,9 +47,29 @@ li a{
     text-decoration: none;
     color: white;
 }
+
+#menuicon{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: none; 
+
+
+}
+#menuicon:hover{
+    box-shadow: 4px 4px  rgb(224, 95, 117);
+}
+
+#menumobile{
+    display: none;
+}
+
+/*fim cabeçalho*/
+
 /*conteudo*/
 main{
-    padding: 20% 0px;
+    padding: 20px 0px;
     flex-direction: column;
     align-items: center;
 }
@@ -89,7 +109,16 @@ button{
 }
 
 #galeria{
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0px;
+    flex-wrap: wrap;
 
+}
+
+#textopagina{
+    width: 80%;
+    margin: 20px 0px;
 }
 
 .post{

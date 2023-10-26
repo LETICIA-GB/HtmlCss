@@ -72,3 +72,8 @@ table{ /*elemento pai do th td*/
     width: 400px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+input{ /*para config a caixa de opção para linha*/
+    border: none;
+    border-bottom: 2px solid rgb(187, 184, 184);
+}
